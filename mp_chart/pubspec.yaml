@@ -10,7 +10,7 @@ dependencies:
   intl: ^0.17.0
   path_provider: ^2.0.11
   screenshot: ^1.2.3
-  path_drawing: ^1.0.1
+  path_drawing: ^0.5.0
   image_gallery_saver: ^1.7.1
   optimized_gesture_detector:
     git:
