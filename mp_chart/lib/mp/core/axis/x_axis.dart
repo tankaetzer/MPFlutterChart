@@ -31,6 +31,8 @@ class XAxis extends AxisBase {
   /// the position of the x-labels relative to the chart
   XAxisPosition _position = XAxisPosition.TOP;
 
+  int? _labelInterval;
+
   XAxis() : super() {
     yOffset = Utils.convertDpToPixel(4);
   }
@@ -97,5 +99,11 @@ class XAxis extends AxisBase {
     int height = Utils.calcTextHeight(p, "A");
 
     return height;
+  }
+
+  int? get labelInterval => _labelInterval;
+  
+  set labelInterval(int? value) {
+    _labelInterval = value;
   }
 }

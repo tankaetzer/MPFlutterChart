@@ -221,6 +221,10 @@ class XAxisRenderer extends AxisRenderer {
             Utils.calcTextWidth(axisLabelPaint!, label).toDouble();
             x = x! + width / 2;
           }
+
+          if (_xAxis?.labelInterval != null) {
+            x = x! + _xAxis!.labelInterval!;
+          }
         }
 
         drawLabel(
