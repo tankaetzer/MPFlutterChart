@@ -227,6 +227,10 @@ class XAxisRenderer extends AxisRenderer {
           }
         }
 
+        if (_xAxis!.entryCount == 1 && _xAxis!.labelInterval != null) {
+          x = x! + _xAxis!.labelInterval!;
+        }
+
         drawLabel(
             c,
             label,
